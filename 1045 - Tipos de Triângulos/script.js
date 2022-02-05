@@ -17,12 +17,8 @@ se apenas dois dos lados forem iguais, apresente a mensagem: TRIANGULO ISOSCELES
 const mostra = mensagem => console.log(mensagem)
 const potencia = (base, expoente) => Math.pow(base,expoente)
 
-const valores = [A,B,C] = input.split(" ").map(item=>parseFloat(item))
+const valores = [a,b,c] = input.split(" ").map(item=>parseFloat(item))
 valores.sort((a,b) => b-a)// transformando em ordem decrescente
-let a = valores[0] 
-let b = valores[1]//atribuido valores da array em cada variavel
-let c = valores[2]
-
 
 if(a>=(b+c)){
     mostra("NAO FORMA TRIANGULO")
